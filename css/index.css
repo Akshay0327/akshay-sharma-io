@@ -3,28 +3,70 @@
     font-size: 3rem;
     padding-top: 2ch;
 }
+#name{
+
+    text-align: center;
+
+    
+}
 h2{
     font-weight:bold;
     font-size: 3em;
 }
 body{
     height: 100vh;
-    background-color: rgb(27,126,226);
+    background-color: rgb(224, 234, 244);
     font-family: "Ysabeau Infant", sans-serif;
+    margin:0;
 }
 #profile-picture{
+    image-resolution: 10px;
     border-radius: 50%;
     margin: 1em;
     width: 30vw;
-    border-color: rgb(27,126,226);
+    border-color: rgb(105, 147, 114);
     border-width: 3dvi;
     border-style: groove;
 }
-#navigation{
-    position: flex;
-    flex-direction: horizontal;
-    position: fixed;
+#navigation ul{
+    list-style-type: none;
+    background-color: rgb(9, 130, 53);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
     top: 0;
-    background-color: rgb(27,130,224);
+    padding-left: 40%;
+
     
+}
+#navigation a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+#navigation a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+#navigation li{
+float:left;
+}
+
+#connect-links{
+    list-style: none;
+    
+
+}
+#connect-links img{
+    height: 42px;
+    width: 42px; 
+    padding-bottom: 2%;
+      
+
 }
