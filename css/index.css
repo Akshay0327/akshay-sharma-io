@@ -1,6 +1,6 @@
 #name{
     font-family: "Dancing Script", cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     padding-top: 2ch;
     text-align: center;
 }
@@ -9,21 +9,41 @@ h2{
     font-size: 3em;
 }
 body{
-    min-height: 100vh;
-    background-color: rgb(224, 234, 244);
     font-family: "Ysabeau Infant", sans-serif;
+    background-color: rgb(224, 234, 244);
     margin:0;
+    padding: 0;
+    line-height: 1.5;    
+    /*min-height: 100vh;*/    
+    
+    
 }
 #profile-picture{
-    image-resolution: 10px;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
     border-radius: 50%;
+    
+
+
+
+   /* image-resolution: 10px;
     margin: 1em;
     width: 30vw;
     border-color: rgb(105, 147, 114);
     border-width: 3dvi;
     border-style: groove;
+*/
 }
 #navigation ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(9, 130, 53);
+    padding: 0;
+    margin: 0; 
+    list-style-type: none; 
+    /*
     list-style-type: none;
     background-color: rgb(9, 130, 53);
     padding: 0px;
@@ -31,9 +51,14 @@ body{
     overflow: hidden;
     top: 0;
     padding-left: 40%;
-    
+    */
 }
 #navigation a{
+    padding: 10px;
+    color: white;
+    display: block;
+    width: 100%;
+    /*
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -41,13 +66,14 @@ body{
     text-align: center;
     display: flex;
     justify-content: center;
-
+*/
 }
 #navigation a:hover{
     background-color: hsl(0, 0%, 10%);
 }
 #navigation li{
-float:left;
+    width: 100%;
+    text-align: center;
 }
 
 #connect-links{
@@ -59,8 +85,50 @@ float:left;
 
 }
 #connect-links img{
-    height: 42px;
-    width: 42px; 
-    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 
+}
+
+@media (min-width: 768px) {
+    #navigation ul {
+        flex-direction: row;
+    }
+
+    #name {
+        font-size: 2.5rem;
+    }
+
+    #profile-picture {
+        width: 40%;
+    }
+
+    #navigation li {
+        width: auto;
+    }
+
+    #connect-links img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #name {
+        font-size: 3rem;
+    }
+
+    #profile-picture {
+        width: 25%;
+    }
+
+    #navigation ul {
+        justify-content: space-around;
+    }
+
+    #connect-links img {
+        height: 60px;
+        width: 60px;
+    }
 }
