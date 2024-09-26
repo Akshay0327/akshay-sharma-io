@@ -2,19 +2,14 @@
     font-family: "Dancing Script", cursive;
     font-size: 3rem;
     padding-top: 2ch;
-}
-#name{
-
     text-align: center;
-
-    
 }
 h2{
     font-weight:bold;
     font-size: 3em;
 }
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(224, 234, 244);
     font-family: "Ysabeau Infant", sans-serif;
     margin:0;
@@ -36,7 +31,6 @@ body{
     overflow: hidden;
     top: 0;
     padding-left: 40%;
-
     
 }
 #navigation a{
@@ -48,8 +42,6 @@ body{
     display: flex;
     justify-content: center;
 
-
-
 }
 #navigation a:hover{
     background-color: hsl(0, 0%, 10%);
@@ -60,6 +52,9 @@ float:left;
 
 #connect-links{
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
     
 
 }
@@ -67,6 +62,5 @@ float:left;
     height: 42px;
     width: 42px; 
     padding-bottom: 2%;
-      
 
 }
