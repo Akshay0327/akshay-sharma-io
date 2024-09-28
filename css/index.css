@@ -63,6 +63,8 @@ body{
 
 }
 #connect-links img{
+    height: 30px;
+    width: 30px;
     display: flex;
     justify-content: center;
     padding: 10px;
