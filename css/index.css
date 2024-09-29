@@ -12,22 +12,15 @@ body{
     font-family: "Ysabeau Infant", sans-serif;
     background-color: rgb(224, 234, 244);
     margin:0;
-    padding: 0;
-    line-height: 1.5;    
-      
-    
-    
+    padding: 1rem;
+    line-height: 1.5;     
 }
+
 #profile-picture{
     width: 60%;
     margin: 0 auto;
     display: block;
     border-radius: 50%;
-    
-
-
-
-
 }
 #navigation ul{
     display: flex;
@@ -71,9 +64,114 @@ body{
 
 }
 
+form.message-form, form.edit-message-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form button.submit-button {
+    padding: 0.75rem;
+    background-color: #098235;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button.submit-button:hover {
+    background-color: #065a24;
+}
+#message-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+#messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.message-item {
+    margin-bottom: 1rem; 
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.message-item a {
+    color: #098235;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.message-item span {
+    margin-left: 0.5rem;
+    color: #333;
+}
+
+.message-item button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message-item button.edit-button {
+    background-color: #4caf50;
+}
+
+.message-item button:hover {
+    background-color: #d32f2f;
+}
+
+.message-item button.edit-button:hover {
+    background-color: #388e3c;
+}
+
 @media (min-width: 768px) {
     #navigation ul {
         flex-direction: row;
+        justify-content: space-around;
     }
 
     #name {
@@ -88,10 +186,12 @@ body{
         width: auto;
     }
 
-    #connect-links img {
-        height: 50px;
-        width: 50px;
-    }
+      
+   .form-section
+   {
+    padding: 2rem;
+   }
+
 }
 
 @media (min-width: 1024px) {
@@ -107,8 +207,4 @@ body{
         justify-content: space-around;
     }
 
-    #connect-links img {
-        height: 60px;
-        width: 60px;
-    }
 }
